@@ -2,11 +2,15 @@
 
 Probando Phoenix Live View, server-rendered HTML
 
-To start your Phoenix server:
+Iniciar Phoenix server:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+  * Instalar dependencias con `mix deps.get`
+  * Crear y Migrar database con `mix ecto.setup`
+  * Instalar Node.js dependencias con `cd assets && npm install`
+  * Comenzar Phoenix Server con `mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Visita [`localhost:4000`](http://localhost:4000) desde el navegador.
+
+### Demo:
+
+! [Imgur](https://i.imgur.com/pVe0ZZ2.png)
