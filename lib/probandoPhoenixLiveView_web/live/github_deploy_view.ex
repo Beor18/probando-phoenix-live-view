@@ -11,13 +11,14 @@ defmodule ProbandoPhoenixLiveViewWeb.GithubDeployView do
 
   def handle_event("github_deploy", _value, socket) do
     IO.puts "Starting deploy..."
-    System.cmd("git", ["add", "lib/probandoPhoenixLiveView_web/live/"], into: IO.stream(:stdio, :line))
+    System.cmd("git", ["add", "."], into: IO.stream(:stdio, :line))
     Process.send_after(self(), :create_org, 1000)
     {:noreply, assign(socket, deploy_step: "Starting deploy...", status: "deploy")}
   end
 
   def handle_info(:create_org, socket) do
     IO.puts "Creating org..."
+    System.cmd("git", ["commit", "-m", "modificado"], into: IO.stream(:stdio, :line))
     Process.send_after(self(), :create_repo, 1000)
     {:noreply, assign(socket, deploy_step: "Creating GitHub org...", status: "create-org")}
   end
