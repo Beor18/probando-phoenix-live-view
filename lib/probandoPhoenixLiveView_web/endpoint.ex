@@ -1,7 +1,7 @@
 defmodule ProbandoPhoenixLiveViewWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :probandoPhoenixLiveView
 
-  socket "/socket", ProbandoPhoenixLiveViewWeb.UserSocket,
+  socket "/live", Phoenix.LiveView.Socket,
     websocket: true,
     longpoll: false
 

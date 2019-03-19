@@ -52,7 +52,8 @@ config :probandoPhoenixLiveView, ProbandoPhoenixLiveViewWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/probandoPhoenixLiveView_web/views/.*(ex)$},
-      ~r{lib/probandoPhoenixLiveView_web/templates/.*(eex)$}
+      ~r{lib/probandoPhoenixLiveView_web/templates/.*(eex)$},
+      ~r{lib/probandoPhoenixLiveView_web/live/.*(ex)$}
     ]
   ]
 
