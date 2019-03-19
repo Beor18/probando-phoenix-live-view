@@ -13,4 +13,4 @@ Visita [`localhost:4000`](http://localhost:4000) desde el navegador.
 
 ### Demo:
 
-! [Imgur](https://i.imgur.com/pVe0ZZ2.png)
+![Imgur](https://i.imgur.com/pVe0ZZ2.png)
