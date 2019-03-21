@@ -5,4 +5,8 @@ defmodule ProbandoPhoenixLiveViewWeb.PageController do
   def index(conn, _) do
     LiveView.Controller.live_render(conn, ProbandoPhoenixLiveViewWeb.GithubDeployView, session: %{})
   end
+
+  def index_crear(conn, _) do
+    LiveView.Controller.live_render(conn, ProbandoPhoenixLiveViewWeb.CrearReactView, session: %{})
+  end
 end
