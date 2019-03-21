@@ -13,7 +13,7 @@ defmodule ProbandoPhoenixLiveViewWeb.CrearReactView do
     IO.puts "Creando archivos..."
     System.cmd("create-react-app", ["demo-react"], into: IO.stream(:stdio, :line))
     Process.send_after(self(), :verificar, 1000)
-    {:noreply, assign(socket, crear_step: "Creando archivos...", status: "crear")}
+    {:noreply, assign(socket, crear_step: "Creando archivos...", status: "crear-app")}
   end
 
   def handle_info(:verificar, socket) do
