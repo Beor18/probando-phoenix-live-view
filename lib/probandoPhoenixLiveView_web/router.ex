@@ -19,6 +19,7 @@ defmodule ProbandoPhoenixLiveViewWeb.Router do
 
     get "/", PageController, :index
     get "/react", PageController, :index_crear
+    get "/consumir", PageController, :consumir
   end
 
   # Other scopes may use custom stacks.
