@@ -57,7 +57,6 @@ defmodule ProbandoPhoenixLiveViewWeb.ConsumirApiView do
       {:noreply, assign(socket, query: query, page: 1)}
     end
 
-    # When the column that is used for sorting is clicked again, we reverse the sort order
     def handle_event("sort", column, %{assigns: %{sort_by: sort_by, sort_order: :asc}} = socket) when column == sort_by do
       {:noreply, assign(socket, sort_by: sort_by, sort_order: :desc)}
     end
@@ -65,7 +64,6 @@ defmodule ProbandoPhoenixLiveViewWeb.ConsumirApiView do
       {:noreply, assign(socket, sort_by: sort_by, sort_order: :asc)}
     end
 
-    # A new column has been clicked
     def handle_event("sort", column, socket) do
       {:noreply, assign(socket, sort_by: column)}
     end
